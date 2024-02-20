@@ -13,48 +13,93 @@
         />
         <script src="utils/animate.js" type="module"></script>
         <script src="utils/document.js" type="module"></script>
-        <script src="index.js" type="module" ></script>
-        <script src="slider.js" type="module" ></script>
+        <script src="index.js" type="module"></script>
+        <script src="slider.js" type="module"></script>
         <title>Founders And Coders site</title>
     </head>
+
     <body class="body">
         <div class="noise"></div>
         <main class="full main-content">
             <header class="content header-container">
                 <div class="header">
-                    <h1 class="header-text header-outline" id="header-left">WELCOME</h1>
+                    <h1 class="header-text header-outline" id="header-left">
+                        WELCOME
+                    </h1>
                     <h1 class="header-text">WELCOME</h1>
-                    <h1 class="header-text header-outline" id="header-right">WELCOME</h1>
+                    <h1 class="header-text header-outline" id="header-right">
+                        WELCOME
+                    </h1>
                 </div>
-                <button class="skip-nav" aria-label="Skip To Content">Skip To Content</button>
+                <button class="skip-nav" aria-label="Skip To Content">
+                    Skip To Content
+                </button>
             </header>
             <section class="full content slider">
                 <div class="slides-bg-outer">
                     <div id="slides-bg">
-                        <div class="slide-bg-image active-slide" data-slide-bg-id="about-me">
-                            <img src="https://images.unsplash.com/photo-1698913464299-23c426d5c555?q=80&w=2067&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"/>
+                        <div
+                            class="slide-bg-image active-slide"
+                            data-slide-bg-id="about-me"
+                        >
+                            <img
+                                src="https://images.unsplash.com/photo-1698913464299-23c426d5c555?q=80&w=2067&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            />
                         </div>
-                        <div class="slide-bg-image active-slide" data-slide-bg-id="home">
-                            <img src="https://images.unsplash.com/photo-1691084041747-9cc0ade8ceda?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"/>
+                        <div
+                            class="slide-bg-image active-slide"
+                            data-slide-bg-id="home"
+                        >
+                            <img
+                                src="https://images.unsplash.com/photo-1691084041747-9cc0ade8ceda?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            />
                         </div>
-                        <div class="slide-bg-image active-slide" data-slide-bg-id="why">
-                            <img src="https://images.unsplash.com/photo-1700819000381-5a5f14e5de3c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"/>
+                        <div
+                            class="slide-bg-image active-slide"
+                            data-slide-bg-id="why"
+                        >
+                            <img
+                                src="https://images.unsplash.com/photo-1700819000381-5a5f14e5de3c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            />
                         </div>
                     </div>
                 </div>
                 <div id="slides-text">
                     <div class="slides-text-container">
-                        <div class="slide-text" data-slide-id="about-me" aria-hidden="true">
+                        <div
+                            class="slide-text"
+                            data-slide-id="about-me"
+                            aria-hidden="true"
+                        >
                             <h1 class="slide-text-heading">About Me</h1>
-                            <p class="slide-text-sub-heading">Scroll down to read more about me</p>
+                            <p class="slide-text-sub-heading">
+                                Scroll down to read more about me
+                            </p>
                         </div>
-                        <div class="slide-text" data-slide-id="home" aria-hidden="true">
-                            <h1 class="slide-text-heading home-text-heading">I'm Dexter</h1>
-                            <p class="slide-text-sub-heading home-text-sub-heading">Front-End web developer and Designer</p>
+                        <div
+                            class="slide-text"
+                            data-slide-id="home"
+                            aria-hidden="true"
+                        >
+                            <h1 class="slide-text-heading home-text-heading">
+                                I'm Dexter
+                            </h1>
+                            <p
+                                class="slide-text-sub-heading home-text-sub-heading"
+                            >
+                                Front-End web developer and Designer
+                            </p>
                         </div>
-                        <div class="slide-text" data-slide-id="why" aria-hidden="true">
+                        <div
+                            class="slide-text"
+                            data-slide-id="why"
+                            aria-hidden="true"
+                        >
                             <h1 class="slide-text-heading">Why</h1>
-                            <p class="slide-text-sub-heading">Scroll down to read more about why I want to be apart of this apprenticeship</p>
+                            <p class="slide-text-sub-heading">
+                                Scroll down to read more about why I want to be
+                                apart of this apprenticeship
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -62,14 +107,24 @@
                     <div class="arrow-container">
                         <div class="arrow-filler"></div>
                         <button id="move-left" aria-label="Slide Left">
-                            <img class="icon arrow-left"src="/assets/icons/triangle.svg" alt="Move Left" draggable="false"/>
+                            <img
+                                class="icon arrow-left"
+                                src="/assets/icons/triangle.svg"
+                                alt="Move Left"
+                                draggable="false"
+                            />
                         </button>
                     </div>
                     <div></div>
                     <div class="arrow-container">
                         <div class="arrow-filler"></div>
                         <button id="move-right" aria-label="Slide Right">
-                            <img class="icon arrow-right"src="/assets/icons/triangle.svg" alt="Move Right" draggable="false"/>
+                            <img
+                                class="icon arrow-right"
+                                src="/assets/icons/triangle.svg"
+                                alt="Move Right"
+                                draggable="false"
+                            />
                         </button>
                     </div>
                 </div>
@@ -86,33 +141,204 @@
                 </header>
                 <ul class="links">
                     <li class="github">
-                        <a href="https://github.com/DexterHill0" target="_blank">
-                            <img class="github-logo" alt="GH Logo" src="/assets/icons/github-mark-white.svg"/>
+                        <a
+                            href="https://github.com/DexterHill0"
+                            target="_blank"
+                        >
+                            <img
+                                class="github-logo"
+                                alt="GH Logo"
+                                src="/assets/icons/github-mark-white.svg"
+                            />
                         </a>
-                        <a class="github-anchor" href="https://github.com/DexterHill0" target="_blank">GITHUB</a>
+                        <a
+                            class="github-anchor"
+                            href="https://github.com/DexterHill0"
+                            target="_blank"
+                            >GITHUB</a
+                        >
                     </li>
                     <li class="linkedin">
-                        <a href="https://www.linkedin.com/in/dexter-hill-52a473282/" target="_blank">
-                            <img class="linkedin-logo" alt="GH Logo" src="/assets/icons/linkedin-app-white-icon.svg"/>
+                        <a
+                            href="https://www.linkedin.com/in/dexter-hill-52a473282/"
+                            target="_blank"
+                        >
+                            <img
+                                class="linkedin-logo"
+                                alt="GH Logo"
+                                src="/assets/icons/linkedin-app-white-icon.svg"
+                            />
                         </a>
-                        <a class="linkedin-anchor" href="https://www.linkedin.com/in/dexter-hill-52a473282/" target="_blank">LINKED IN</a>
+                        <a
+                            class="linkedin-anchor"
+                            href="https://www.linkedin.com/in/dexter-hill-52a473282/"
+                            target="_blank"
+                            >LINKED IN</a
+                        >
                     </li>
                 </ul>
-                <div>
+                <div style="z-index: 100">
                     <p class="about-me-para">
-                        Hey there! 👋 I'm a 19-year-old frontend software developer with a passion for coding since I was 8. My experience includes GCSE in computer science with a grade 8 and a BTECH level 3 in computer science with a DMM (distinction, merit, merit). I learn best by diving into projects and learning from mistakes, rather than just reading through a book or documentation. My go-to languages are Rust, Python, and TypeScript, of which I have the most experience in, and I excel with frameworks like React and Svelte. When I'm not coding, I enjoy graphic design, occasional game development, and gaming. I also work part-time as a lifeguard and love hanging out with friends. 
+                        Hey there! 👋 I'm Dexter, a 19-year-old frontend
+                        software developer with a passion for coding since I was
+                        8. My experience includes GCSE in computer science with
+                        a grade 8 and a BTECH level 3 in computer science with a
+                        DMM (distinction, merit, merit).
+                        <br />I learn best by diving into projects and learning
+                        from mistakes, rather than just reading through a book
+                        or documentation. My go-to languages are
+                        <a
+                            class="link"
+                            href="https://www.rust-lang.org/"
+                            target="_blank"
+                            >Rust</a
+                        >,
+                        <a
+                            class="link"
+                            href="https://www.python.org/"
+                            target="_blank"
+                            >Python</a
+                        >, and
+                        <a
+                            href="https://www.typescriptlang.org/"
+                            target="_blank"
+                            class="link"
+                            >TypeScript</a
+                        >, of which I have the most experience in, and I excel
+                        with web frameworks like
+                        <a
+                            class="link"
+                            href="https://react.dev/"
+                            target="_blank"
+                            >React</a
+                        >
+                        and
+                        <a
+                            class="link"
+                            href="https://svelte.dev/"
+                            target="_blank"
+                            >Svelte</a
+                        >. I also have a lot of experience with web technologies
+                        like
+                        <a
+                            class="link"
+                            href="https://sass-lang.com/"
+                            target="_blank"
+                            >(S)CSS</a
+                        >,
+                        <a
+                            class="link"
+                            href="https://tailwindcss.com/"
+                            target="_blank"
+                            >Tailwind</a
+                        >, Responsive Styling, and more. I have designed and
+                        created a few difference websites, some of which are
+                        listed below. <br />When I'm not coding, I enjoy graphic
+                        design, occasional game development, and gaming. I also
+                        work part-time as a lifeguard and love hanging out with
+                        friends.
                     </p>
-                    <h2 class="career-heading">Why would I like to make web development into a career?</h2>
+                    <h2 class="about-me-heading">
+                        Why would I like to make web development into a career?
+                    </h2>
                     <p class="about-me-para">
-                        I'm eager to transition into a web development career to leverage my skills for broader impact. I'm passionate about crafting quality websites and sharing knowledge with others. I look forward to collaborating with like-minded professionals in the industry and expanding my expertise by tackling new projects and technologies. A career in web development aligns perfectly with my learning style, allowing me to dive into projects and continuously grow my skills.
+                        I'm eager to transition into a web development career to
+                        leverage my skills for broader impact. I'm passionate
+                        about crafting quality websites and sharing knowledge
+                        with others. I look forward to collaborating with
+                        like-minded professionals in the industry and expanding
+                        my expertise by tackling new projects and technologies.
+                        I like the idea of encountering projects that require me
+                        to work with frameworks, stacks, or tools that are new
+                        to me. It's appealing because I enjoy the challenge of
+                        diving headfirst into unfamiliar territory and learning
+                        through hands-on experience. Each new project will
+                        provide a platform for me to expand my skill set and
+                        deepen my understanding of different practices.
                     </p>
+                    <h2 class="about-me-heading">
+                        Some of my interesting sites
+                    </h2>
+                    <p class="about-me-para">
+                        Below are a few interesting websites I have created over
+                        time.
+                    </p>
+                    <div class="projects-table-container">
+                        <table class="projects-table">
+                            <tr>
+                                <th>Name</th>
+                                <th>Link</th>
+                                <th>Description</th>
+                            </tr>
+                            <tr>
+                                <td>BT Email UI Concept</td>
+                                <td>
+                                    <a
+                                        class="link"
+                                        href="https://github.com/DexterHill0/bt-email-ui-concept"
+                                        target="_blank"
+                                        >https://github.com/DexterHill0/bt-email-ui-concept</a
+                                    >
+                                </td>
+                                <td>
+                                    A redesign of the old BT Email UI as a proof
+                                    of concept.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Geometry Dash Place 2.1</td>
+                                <td>
+                                    <a
+                                        class="link"
+                                        href="https://github.com/FlowVix/gd-place"
+                                        target="_blank"
+                                        >https://github.com/FlowVix/gd-place</a
+                                    >
+                                </td>
+                                <td>
+                                    GD-Place is a massive r/place-style
+                                    collaborative Geometry Dash level-editor.
+                                    Read more at the link.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>This website!</td>
+                                <td>
+                                    <a
+                                        class="link"
+                                        href="https://github.com/DexterHill0/fac-website"
+                                        target="_blank"
+                                        >https://github.com/DexterHill0/fac-website</a
+                                    >
+                                </td>
+                                <td>I think this site is pretty cool</td>
+                            </tr>
+                        </table>
+                    </div>
                 </div>
+                <footer class="back-to-top-footer">
+                    <button class="back-top-top-button">
+                        <div class="back-to-top">
+                            <img
+                                class="icon"
+                                src="/assets/icons/triangle.svg"
+                                alt="Move Left"
+                                draggable="false"
+                            />
+                            Back to Top
+                            <img
+                                class="icon"
+                                src="/assets/icons/triangle.svg"
+                                alt="Move Left"
+                                draggable="false"
+                            />
+                        </div>
+                    </button>
+                </footer>
             </section>
             <section id="why-section" data-section="why">
                 <h1 class="why-section-header">
-                    <a href="#why" class="why-section-anchor">
-                        WHY
-                    </a>
+                    <a href="#why" class="why-section-anchor"> WHY </a>
                 </h1>
                 <div></div>
             </section>

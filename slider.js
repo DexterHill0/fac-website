@@ -218,7 +218,11 @@ const updateSlideOrderAttr = () => {
 const slideRight = () => {
     if (slider == null) return;
 
-    window.scrollTo(0, 0);
+    window.scrollTo({
+        left: 0,
+        top: 0,
+        behavior: "smooth",
+    });
 
     // the slide that will transition off the left edge of the screen
     let slideLeavingScreen = currentCenterSlide - 1;
@@ -278,7 +282,11 @@ const slideRight = () => {
 const slideLeft = () => {
     if (slider == null) return;
 
-    window.scrollTo(0, 0);
+    window.scrollTo({
+        left: 0,
+        top: 0,
+        behavior: "smooth",
+    });
 
     // the slide that will transition off the left edge of the screen
     let slideLeavingScreen = currentCenterSlide + 1;

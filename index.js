@@ -1,6 +1,6 @@
 import { getStartingSlide } from "./slider.js";
 import Animate, { EASINGS } from "./utils/animate.js";
-import { waitForElem } from "./utils/document.js";
+import { listenOnMount, waitForElem } from "./utils/document.js";
 
 let widthOfOne = 0;
 let prevReps = 0;
@@ -59,4 +59,12 @@ waitForElem(".slide-text").then((e) => {
         .easing(EASINGS.QUART_IN_OUT)
         .duration(1000)
         .begin();
+});
+
+listenOnMount(".back-top-top-button", "click", () => {
+    window.scrollTo({
+        left: 0,
+        top: 0,
+        behavior: "smooth",
+    });
 });
