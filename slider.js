@@ -136,6 +136,7 @@ const switchToSection = (sectionId) => {
                 section.style.display = "inherit";
             } else {
                 section.style.display = "none";
+                section.classList.remove("show-all");
             }
         }
     }
@@ -148,6 +149,7 @@ listenOnMount(".skip-nav", "click", () => {
         if (section == null) return;
         section.style.display = "inherit";
         document.body.style.overflowY = "scroll";
+        section.classList.add("show-all");
     }
 
     const container = document.querySelector("#section-container");

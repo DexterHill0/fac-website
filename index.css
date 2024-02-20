@@ -339,12 +339,15 @@
 #about-me-section,
 #why-section {
     width: 100%;
-    min-height: 100vh;
     height: auto;
     display: none;
     display: flex;
     gap: 20px;
     flex-direction: column;
+}
+
+#why-section.show-all {
+    padding-top: 150px;
 }
 
 .skip-nav {
@@ -449,7 +452,8 @@
     width: max-content;
 }
 
-.about-me-para {
+.about-me-para,
+.why-para {
     font-family: "Fira Mono", monospace;
     font-style: normal;
     font-size: var(--text-xs);
@@ -458,7 +462,8 @@
     line-height: 1.4;
 }
 
-.about-me-heading {
+.about-me-heading,
+.why-heading {
     color: var(--pink);
     font-size: var(--text-lg);
     font-family: "Playfair Display", serif;
