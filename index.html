@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="index.css" />
+        <link rel="stylesheet" href="utils.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet"
+        />
+        <script src="utils/animate.js" type="module"></script>
+        <script src="utils/document.js" type="module"></script>
+        <script src="index.js" type="module" ></script>
+        <script src="slider.js" type="module" ></script>
+        <title>Founders And Coders site</title>
+    </head>
+    <body class="body">
+        <div class="noise"></div>
+        <main class="full main-content">
+            <header class="content header-container">
+                <div class="header">
+                    <h1 class="header-text header-outline" id="header-left">WELCOME</h1>
+                    <h1 class="header-text">WELCOME</h1>
+                    <h1 class="header-text header-outline" id="header-right">WELCOME</h1>
+                </div>
+                <button class="skip-nav" aria-label="Skip To Content">Skip To Content</button>
+            </header>
+            <section class="full content slider">
+                <div class="slides-bg-outer">
+                    <div id="slides-bg">
+                        <div class="slide-bg-image active-slide" data-slide-bg-id="about-me">
+                            <img src="https://images.unsplash.com/photo-1698913464299-23c426d5c555?q=80&w=2067&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"/>
+                        </div>
+                        <div class="slide-bg-image active-slide" data-slide-bg-id="home">
+                            <img src="https://images.unsplash.com/photo-1691084041747-9cc0ade8ceda?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"/>
+                        </div>
+                        <div class="slide-bg-image active-slide" data-slide-bg-id="why">
+                            <img src="https://images.unsplash.com/photo-1700819000381-5a5f14e5de3c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"/>
+                        </div>
+                    </div>
+                </div>
+                <div id="slides-text">
+                    <div class="slides-text-container">
+                        <div class="slide-text" data-slide-id="about-me" aria-hidden="true">
+                            <h1 class="slide-text-heading">About Me</h1>
+                            <p class="slide-text-sub-heading">Scroll down to read more about me</p>
+                        </div>
+                        <div class="slide-text" data-slide-id="home" aria-hidden="true">
+                            <h1 class="slide-text-heading home-text-heading">I'm Dexter</h1>
+                            <p class="slide-text-sub-heading home-text-sub-heading">Front-End web developer and Designer</p>
+                        </div>
+                        <div class="slide-text" data-slide-id="why" aria-hidden="true">
+                            <h1 class="slide-text-heading">Why</h1>
+                            <p class="slide-text-sub-heading">Scroll down to read more about why I want to be apart of this apprenticeship</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slides-arrows">
+                    <div class="arrow-container">
+                        <div class="arrow-filler"></div>
+                        <button id="move-left" aria-label="Slide Left">
+                            <img class="icon arrow-left"src="/assets/icons/triangle.svg" alt="Move Left" draggable="false"/>
+                        </button>
+                    </div>
+                    <div></div>
+                    <div class="arrow-container">
+                        <div class="arrow-filler"></div>
+                        <button id="move-right" aria-label="Slide Right">
+                            <img class="icon arrow-right"src="/assets/icons/triangle.svg" alt="Move Right" draggable="false"/>
+                        </button>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <div id="section-container">
+            <section id="about-me-section" data-section="about-me">
+                <header class="about-me-section-header-container">
+                    <h1 class="about-me-section-header">
+                        <a href="#about-me" class="about-me-section-anchor">
+                            ABOUT ME
+                        </a>
+                    </h1>
+                </header>
+                <ul class="links">
+                    <li class="github">
+                        <a href="https://github.com/DexterHill0" target="_blank">
+                            <img class="github-logo" alt="GH Logo" src="/assets/icons/github-mark-white.svg"/>
+                        </a>
+                        <a class="github-anchor" href="https://github.com/DexterHill0" target="_blank">GITHUB</a>
+                    </li>
+                    <li class="linkedin">
+                        <a href="https://www.linkedin.com/in/dexter-hill-52a473282/" target="_blank">
+                            <img class="linkedin-logo" alt="GH Logo" src="/assets/icons/linkedin-app-white-icon.svg"/>
+                        </a>
+                        <a class="linkedin-anchor" href="https://www.linkedin.com/in/dexter-hill-52a473282/" target="_blank">LINKED IN</a>
+                    </li>
+                </ul>
+                <div>
+                    <p class="about-me-para">
+                        Hey there! 👋 I'm a 19-year-old frontend software developer with a passion for coding since I was 8. My experience includes GCSE in computer science with a grade 8 and a BTECH level 3 in computer science with a DMM (distinction, merit, merit). I learn best by diving into projects and learning from mistakes, rather than just reading through a book or documentation. My go-to languages are Rust, Python, and TypeScript, of which I have the most experience in, and I excel with frameworks like React and Svelte. When I'm not coding, I enjoy graphic design, occasional game development, and gaming. I also work part-time as a lifeguard and love hanging out with friends. 
+                    </p>
+                    <h2 class="career-heading">Why would I like to make web development into a career?</h2>
+                    <p class="about-me-para">
+                        I'm eager to transition into a web development career to leverage my skills for broader impact. I'm passionate about crafting quality websites and sharing knowledge with others. I look forward to collaborating with like-minded professionals in the industry and expanding my expertise by tackling new projects and technologies. A career in web development aligns perfectly with my learning style, allowing me to dive into projects and continuously grow my skills.
+                    </p>
+                </div>
+            </section>
+            <section id="why-section" data-section="why">
+                <h1 class="why-section-header">
+                    <a href="#why" class="why-section-anchor">
+                        WHY
+                    </a>
+                </h1>
+                <div></div>
+            </section>
+        </div>
+    </body>
+</html>
