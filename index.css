@@ -271,6 +271,11 @@
     flex-direction: column;
 }
 
+#about-me-section *,
+#why-section * {
+    user-select: text;
+}
+
 #why-section.show-all {
     padding-top: 150px;
 }
@@ -309,6 +314,7 @@
     font-weight: 800;
     z-index: 40;
     white-space: nowrap;
+    user-select: none !important;
 }
 
 .about-me-section-anchor::after {
@@ -385,6 +391,7 @@
     color: white;
     font-smooth: never;
     line-height: 1.4;
+    user-select: text;
 }
 
 .about-me-heading,
@@ -394,6 +401,7 @@
     font-family: "Playfair Display", serif;
     font-weight: 600;
     padding: 20px;
+    user-select: text;
 }
 
 .projects-table-container {
