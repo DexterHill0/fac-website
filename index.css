@@ -62,7 +62,7 @@
 .body {
     margin: 0;
     width: 100vw;
-    height: 100vh;
+    height: 100svh;
     background: var(--primary-bg);
     overflow-y: hidden;
     overflow-x: hidden;
@@ -484,6 +484,15 @@
         font-size: var(--text-3xl);
     }
 
+    .skip-nav {
+        font-size: var(--text-xs);
+        bottom: -60%;
+    }
+
+    #why-section.show-all {
+        padding-top: 100px;
+    }
+
     .slide-text-heading {
         font-size: var(--text-3xl);
     }
@@ -507,6 +516,7 @@
     .about-me-heading,
     .why-heading {
         font-size: var(--text-md);
+        text-align: center;
     }
 
     .github-logo,
