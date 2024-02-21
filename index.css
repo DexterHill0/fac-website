@@ -255,81 +255,6 @@
     opacity: 0.6;
 }
 
-/* MD SCREEN */
-@media only screen and (max-width: 1100px) {
-    .content {
-        font-size: var(--text-4xl);
-    }
-
-    .slide-text-heading {
-        font-size: var(--text-4xl);
-    }
-}
-
-/* SM SCREEN */
-@media only screen and (max-width: 800px) {
-    .content {
-        font-size: var(--text-3xl);
-    }
-
-    .slide-text-heading {
-        font-size: var(--text-3xl);
-    }
-
-    .slide-text-sub-heading {
-        font-size: var(--text-sm);
-    }
-
-    .icon {
-        width: 30px;
-    }
-
-    :root {
-        --slider-cols: 1;
-    }
-
-    #slides-bg {
-        left: -100%;
-    }
-
-    .slide-bg-image img {
-        width: 100%;
-        height: 100%;
-        object-fit: contain;
-    }
-
-    .slide-text {
-        max-width: 35rem;
-    }
-}
-
-/* XS SCREEN */
-@media only screen and (max-width: 500px) {
-    .content {
-        font-size: var(--text-2xl);
-    }
-
-    .slide-text-heading {
-        font-size: var(--text-2xl);
-    }
-
-    .slide-text-sub-heading {
-        font-size: var(--text-xs);
-    }
-
-    .icon {
-        width: 25px;
-    }
-
-    .arrow-filler {
-        flex: 0.5 0 auto;
-    }
-
-    .slide-text {
-        max-width: 20rem;
-    }
-}
-
 #section-container {
     display: flex;
     flex-direction: column;
@@ -383,6 +308,7 @@
     font-family: "Playfair Display", serif;
     font-weight: 800;
     z-index: 40;
+    white-space: nowrap;
 }
 
 .about-me-section-anchor::after {
@@ -390,7 +316,7 @@
     position: absolute;
     width: max-content;
     left: 0;
-    bottom: -15px;
+    bottom: -12%;
     color: transparent;
     -webkit-text-stroke: 1px white;
     clip-path: inset(75% 0 0 0);
@@ -401,7 +327,7 @@
     position: absolute;
     width: max-content;
     left: 0;
-    top: -15px;
+    top: -12%;
     color: transparent;
     -webkit-text-stroke: 1px white;
     clip-path: inset(0 0 65% 0);
@@ -426,11 +352,6 @@
     align-items: center;
     gap: 10px;
 }
-.github-logo {
-    width: 32px;
-    height: 32px;
-    aspect-ratio: 1/1;
-}
 
 .github-logo-anchor:hover + .github-anchor {
     width: max-content;
@@ -442,14 +363,18 @@
     align-items: center;
     gap: 10px;
 }
-.linkedin-logo {
-    width: 32px;
-    height: 32px;
-    aspect-ratio: 1/1;
-}
 
 .linkedin-logo-anchor:hover + .linkedin-anchor {
     width: max-content;
+}
+
+.github-logo,
+.linkedin-logo {
+    min-width: 32px;
+    min-height: 32px;
+    width: 32px;
+    height: 32px;
+    aspect-ratio: 1/1;
 }
 
 .about-me-para,
@@ -473,6 +398,7 @@
 
 .projects-table-container {
     padding-top: 30px;
+    overflow: scroll;
 }
 
 .projects-table {
@@ -534,4 +460,128 @@
 
 .back-to-top .icon {
     width: 22px;
+}
+
+/* MD SCREEN */
+@media only screen and (max-width: 1100px) {
+    .content {
+        font-size: var(--text-4xl);
+    }
+
+    .about-me-section-anchor,
+    .why-section-anchor {
+        font-size: var(--text-3xl);
+    }
+
+    .slide-text-heading {
+        font-size: var(--text-4xl);
+    }
+}
+
+/* SM SCREEN */
+@media only screen and (max-width: 800px) {
+    .content {
+        font-size: var(--text-3xl);
+    }
+
+    .slide-text-heading {
+        font-size: var(--text-3xl);
+    }
+
+    .about-me-section-header,
+    .why-section-header {
+        text-align: center;
+    }
+
+    .about-me-section-anchor::after,
+    .why-section-anchor::after {
+        transform: translateX(-50%);
+        left: 50%;
+    }
+
+    .links {
+        justify-content: center;
+        font-size: var(--text-2xs);
+    }
+
+    .about-me-heading,
+    .why-heading {
+        font-size: var(--text-md);
+    }
+
+    .github-logo,
+    .linkedin-logo {
+        min-width: 24px;
+        min-height: 24px;
+        width: 24px;
+        height: 24px;
+    }
+
+    .about-me-section-anchor,
+    .why-section-anchor {
+        font-size: var(--text-2xl);
+    }
+
+    .slide-text-sub-heading {
+        font-size: var(--text-sm);
+    }
+
+    .icon {
+        width: 30px;
+    }
+
+    :root {
+        --slider-cols: 1;
+    }
+
+    #slides-bg {
+        left: -100%;
+    }
+
+    .slide-bg-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    .slide-text {
+        max-width: 35rem;
+    }
+
+    .projects-table th,
+    .projects-table * {
+        font-size: var(--text-2xs);
+    }
+}
+
+/* XS SCREEN */
+@media only screen and (max-width: 500px) {
+    .content {
+        font-size: var(--text-2xl);
+    }
+
+    .slide-text-heading {
+        font-size: var(--text-2xl);
+    }
+
+    .slide-text-sub-heading {
+        font-size: var(--text-xs);
+    }
+
+    .about-me-section-anchor,
+    .why-section-anchor {
+        font-size: var(--text-xl);
+    }
+
+    .icon {
+        width: 25px;
+    }
+
+    .arrow-filler {
+        flex: 0.5 0 auto;
+    }
+
+    .slide-text {
+        max-width: 20rem;
+    }
 }
