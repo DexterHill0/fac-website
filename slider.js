@@ -199,12 +199,6 @@ const removeOldChildren = () => {
 };
 
 const updateSlideOrderAttr = () => {
-    // const query = document.querySelectorAll(".active-slide") ?? [];
-
-    // for (let i = 0; i < query.length; i++) {
-    //     query[i].setAttribute("data-slide-order", i);
-    // }
-
     const posses = getLeftCenterRight();
 
     for (let i = 0; i < posses.length; i++) {
@@ -220,11 +214,7 @@ const updateSlideOrderAttr = () => {
 const slideRight = () => {
     if (slider == null) return;
 
-    window.scrollTo({
-        left: 0,
-        top: 0,
-        behavior: "smooth",
-    });
+    window.scrollTo(0, 0);
 
     // the slide that will transition off the left edge of the screen
     let slideLeavingScreen = currentCenterSlide - 1;
@@ -284,11 +274,7 @@ const slideRight = () => {
 const slideLeft = () => {
     if (slider == null) return;
 
-    window.scrollTo({
-        left: 0,
-        top: 0,
-        behavior: "smooth",
-    });
+    window.scrollTo(0, 0);
 
     // the slide that will transition off the left edge of the screen
     let slideLeavingScreen = currentCenterSlide + 1;
