@@ -131,12 +131,14 @@
     position: relative;
     height: 100%;
     width: 100%;
+    opacity: 95%;
 }
 
 .slides-bg-outer {
     position: absolute;
     height: 100%;
     width: 100%;
+    mask-image: radial-gradient(circle, black 65%, transparent 100%);
 }
 
 .slide-bg-image {
@@ -147,13 +149,19 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    mask-image: linear-gradient(
+        transparent 0%,
+        black 20%,
+        black 80%,
+        transparent 100%
+    );
 }
 
 .slide-bg-image img {
     width: 100%;
     height: 100%;
     object-fit: contain;
-    padding: 20px;
+    padding: 70px;
 }
 
 .slides-arrows {
@@ -303,7 +311,6 @@
 .about-me-section-header,
 .why-section-header {
     transform: scaleY(2);
-    /* transform-origin: top; */
 }
 
 .about-me-section-anchor,
